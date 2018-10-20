@@ -58,29 +58,4 @@ app.get('/api/users/:id',function (req,res) {
     });
 });
 
-app.get('/api/users/me',function (req,res) {
-});
-
-app.get('/api/sessions',function (req,res) {
-  db.Session.findAll()
-    .then(function (sessions) {
-      res.json(sessions);
-    })
-    .catch(function (err) {
-      res.sendStatus(500);
-    });
-});
-
-app.get('/api/sessions/create',function (req,res) {
-  db.Session.create({
-    where: req.body
-  })
-    .then(function (results) {
-      res.json(results);
-    })
-    .catch(function (err) {
-      res.sendStatus(500);
-    });
-});
-
 app.listen(3069);
