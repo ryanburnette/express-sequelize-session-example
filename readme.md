@@ -7,3 +7,17 @@ A starting point for an Express app that uses:
 - [connect-session-sequelize](https://github.com/mweibel/connect-session-sequelize)
 
 I did not get the `sync` functionality of connect-session-sequelize to work.
+
+## Usage
+
+```bash
+$ npm install
+```
+
+```bash
+$ node support/sync.js
+```
+
+```bash
+$ npm run watch
+```
